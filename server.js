@@ -101,3 +101,5 @@ app.post("/session", async (req, res) => {
 app.listen(PORT, () => {
   console.log(`起動しました: http://localhost:${PORT}`);
 });
+
+console.log("APIキー確認:", process.env.OPENAI_API_KEY ? "OK" : "未設定");
