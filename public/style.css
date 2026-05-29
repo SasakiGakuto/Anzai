@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #b7d5ac;
+  text-align: center;
+}
+
+.app {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.media-box {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 4/5;
+  margin: 0 auto;
+  background: #000;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+
+}
+
+.media-box img,
+.media-box video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+#video {
+  display: none;
+}
+
+#status {
+  margin-top: 16px;
+  font-size: 16px;
+}
+
+/* ヘッダー全体 */
+.page-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #4a7c59; /* 好きな背景色に変更可 */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+/* ヘッダー内のテキスト */
+.page-header h1 {
+  font-size: 30px;
+  margin: 0;
+  flex-grow: 1; /* テキスト部分を広げる */
+  text-align: center;
+}
+
+.top-icon {
+  position: absolute;
+  top: 10px;
+  left: 16px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.top-icon img {
+  width: 150%;
+  height: 150%;
+  object-fit: contain;
+}
+
+/* .appのマージントップをヘッダー分確保 */
+.app {
+  max-width: 600px;
+  margin: 100px auto 40px auto; /* 上の余白をヘッダー分広く */
+  padding: 20px;
+}
